@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            border: 1px solid rgb(97, 97, 196);
+            width:800px;
+            height:470px;
+        }
+    </Style>
+</head>
+<body>
+    <h1> Contact us</h1>
+    <fieldset>
+        <legend>Your message: </legend>
+        <table>
+            <tr>
+            <td><label for ="box1">To</label></td>
+            <td><input type ="text" id="box1" name ="box1" value="Example Cafe"></td>
+            </tr>
+
+            <tr>
+            <td><label for ="box2">Your email</label></td>
+            <td><input type ="text" id="box2" name ="box2"></td>
+
+            </tr>
+            <tr>
+            <td><label for = "box3">Message</label></td>
+            <td><textarea name="message" style = "width:350px; height:100px;"></textarea></td>
+
+            </tr>
+            <tr>
+            <table>
+            <td><label for ="box4">Attach file</label></td>
+            <td><button name="Choose File">Choose File</button></td>
+            <td>No file chosen</td>
+            </tr>
+            </table>
+        </table>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>How you found us:</legend>
+        <table>
+            <tr>
+            <td><label for="box1">How did you hear of us</label></td>
+            <td><select name="choose" id="choose">
+                <option value="Google">Google</option>
+            </select></td>
+            </tr>
+        </table>
+        <table>
+            <br>
+            <td><label for="box2">Newsletter</label></td>
+            <td><input type="checkbox" id="boxx"></td>
+            <td><label for="text">Ensure this box is checked if you would like to receive email updates</label></td>
+        </table>
+    </fieldset>
+    
+    <button name="Send message">Send message</button>
+</body>
+</html>
