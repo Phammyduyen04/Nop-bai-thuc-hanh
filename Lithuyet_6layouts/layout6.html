@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+
+        .header, .nav, .footer {
+            background-color: #FDE287;
+            border-bottom: 1px solid;
+            padding: 0.5cm;
+            text-align: center;
+        }
+
+        .nav {
+            border-bottom: 1px solid;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            border-bottom: 1px solid;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            padding: 0.5cm;
+            box-sizing: border-box;
+            background-color: #FDE287;
+        }
+
+        .aside {
+            width: 25%;
+            background-color: #FDE287;
+            padding: 0.5cm;
+            border-left: 1px solid;
+            box-sizing: border-box;
+        }
+
+        .article {
+            flex: 1;
+            padding: 0.5cm;
+            margin-bottom: 0.5cm;
+            background-color: #FAEBD7;
+            box-sizing: border-box;
+        }
+
+        .article:last-child {
+            margin-bottom: 0;
+            background-color: #F5DEB3;
+        }
+
+        .footer {
+            background-color: #FDE287;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">header</div>
+    <div class="nav">nav</div>
+    <div class="content">
+        <div class="section">
+            <div class="article">article</div>
+            <div class="article">article</div>
+        </div>
+        <div class="aside">aside</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
