@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+
+        .header{
+            font-size: 32px;
+            text-align: center;
+            padding: 0.5cm;
+            font-weight: bold;
+            color:brown;
+            font-style: italic;
+            text-shadow: 7px 10px 5px rgb(223, 118, 118);
+        }
+
+        .nav{
+            left: 50px;
+            background-color:#EA9598;
+            display: flex;
+            justify-content: center; 
+        }
+        
+        .nav li{
+            display: inline;
+            padding-left: 20px;
+        }
+
+        .nav li img{
+            width: 20px;
+            border-right: 1px solid blue;
+            padding-right: 5px;          
+        }
+
+        .nav li a{
+            text-decoration: none;
+            font-weight: bold;
+            border-right: 1px solid blue;
+            padding-right: 15px;
+            color: white;
+        }
+
+        .contain{
+            display: flex;
+        }
+
+        .nav1{
+            display: flex;
+            justify-content: left;
+            float: left;
+            margin-left: 0;
+        }
+
+        .nav1 ul li{
+            list-style-type: none;
+            margin: 0;
+            
+        }
+
+        .nav1 li:first-child{
+            color:white;
+            border: 1px solid #EA9598;
+            border-radius: 30px;
+            background-color: #EA9598;
+            padding: 5px 100px 5px 25px;
+            margin-bottom: 10px;
+        }
+
+        .nav1 li:nth-child(2){
+            color:white;
+            border: 1px solid #EA9598;
+            border-radius: 30px;
+            background-color: #EA9598;
+            padding: 5px 100px 5px 25px;
+            margin-bottom: 10px;
+        }
+
+        .nav1 li:nth-child(3){
+            color:white;
+            border: 1px solid #EA9598;
+            border-radius: 30px;
+            background-color: #EA9598;
+            padding: 5px 100px 5px 25px;
+            margin-bottom: 10px;
+        }
+
+        .nav1 li:nth-child(4){
+            color:white;
+            border: 1px solid #EA9598;
+            border-radius: 30px;
+            background-color: #EA9598;
+            padding: 5px 100px 5px 25px;
+            margin-bottom: 10px;
+        }
+
+        .nav1 li:nth-child(5){
+            color:white;
+            border: 1px solid #EA9598;
+            border-radius: 30px;
+            background-color: #EA9598;
+            padding: 5px 100px 5px 25px;
+            margin-bottom: 10px;
+        }
+
+        .nav1 img{
+            width:80%;
+            border-radius: 50%;
+            box-shadow: 7px 15px 15px #EA9598;
+            margin: 0
+        }
+
+        .section{
+            float:left;
+            padding-right: 100px;
+        }
+
+        .section > .box1{
+            font-size: 28px;
+            letter-spacing: 20px;
+            font-weight: bold;
+            color:brown;
+            background-color: #EA9598;;
+            display:block;
+            margin: 10px 0 10px 200px;
+            padding-right: 20px;
+        }
+
+        .section > .box2{
+            font-size: 16px;
+            margin: 0 250px 0 0;
+        }
+
+        .box2 a{
+            color: red;
+            font-weight: bold;
+        }
+
+        .box21 li{
+            color: #D58B5E;
+            font-weight: bold;
+        }
+
+        .box3{
+            font-size: 18px;
+        }
+
+        .box3 a {
+            color: red;
+            font-weight: bold;
+        }
+
+        .section > .box4 input{
+            height: 1cm;
+        }
+
+        .aside{
+            background-color: black;
+            padding: 0 50px 100px 24.5px;
+            float:left;
+            color: white;
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+        .aside > .article{
+            font-size: 20px;
+        }
+
+        .article img{
+            width: 50%;
+        }
+
+        .article p{
+            font-size: 12px;
+        }
+
+        .article a{
+            color: #EA9598;
+        }
+
+        .footer{
+            padding: 0 0 0.5cm 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">EXAMPLE CAFE MENU</div>
+    <div class="nav">
+        <ul>
+            <li><img src="../Bai1/icons8-home-50.png" alt="Home"></li>
+            <li><a href ="#Starter"> STARTER</a></li>
+            <li><a href ="#Main courses">MAIN COURSES</a></li>
+            <li><a href ="#Desserts">DESSERTS</a></li>
+            <li><input type="text" class="search-box" size="15">
+                <button class="search-box">Go</button></li>
+        </ul>      
+        
+    </div>
+
+    <div class="contain">
+        <div class="nav1">
+            <ul>
+                <li>Cafe Latte</li>
+                <li>Capuchino</li>
+                <li>Ocean Blue</li>
+                <li>Ice-cream Cafe</li>
+                <li>Order Online</li>
+                <li><img src="../Bai1/company.png" alt="Loading"></li>
+            </ul>
+
+        </div>
+
+        <div class="section">      
+            <div class="box1">Starter</div>
+
+            <div class="box2">
+                <ul>
+                    <li>Chestnut and Mushroom Goujons <a href = "#(v)">(v)</a></li>
+                    <li>Goat Cheese Salad <a href = "#(v)">(v)</a></li>
+                    <div class="box21"><li>HONEY SOYS CHICKEN KEBABS <a href = "#(v)">(V)</a></li></div>
+                    <li>Seafood Salad <a href = "#(v)">(v)</a></li>
+                </ul>
+            </div>
+
+            <div class="box3">
+                <a href = "#Example Cafe Menu">Back to Top </a>
+            </div>
+
+            <div class="box1">Desserts</div>
+
+            <div class="box2">
+                <ul>
+                    <li>Lemon Sorbet <a href = "#(v)">(v)</a></li>
+                    <li>Chocolate Mud Pie <a href = "#(v)">(v)</a></li>
+                    <li>Pecan Pie <a href = "#(v)">(v)</a></li>
+                    <li>Selection of Fine Cheeses from Around the World <a href = "#(v)">(v)</a></li>
+                </ul>
+            </div>
+
+            <div class="box3">
+                <a href = "#Example Cafe Menu">Back to top </a>
+            </div>
+
+            <div class="box1">INFORMATION</div>
+            <div class="box4">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" size="35">
+                    </td>
+
+                    <td>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" size="35">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" id="email" name="email" placeholder="Email" size="35">
+                    </td>
+
+                    <td>
+                        <input type="text" id="telephone" name="telephone" placeholder="Telephone" size="35">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="USA">USA</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <input type="radio" id="language" name="language">
+                        <label for="vietnamese">Vietnamese</label>
+                        <input type="radio" id="language" name="language">
+                        <label for="foreigner">Foreigner</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <textarea name="comment" rows="5" cols="45">Comment</textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="Submit">
+                        <input type="button" value="Cancel">
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+
+        <div class="aside">
+            <h2>Events</h2>
+            <div class="article">
+                <h3>Regular Meetings</h3>
+                <img src="../Bai1/meeting.png" alt="Loading">
+                <p>Host your regular team meetings or activities in the comfort of your own private room. <a href="#Read more...">Read more...</a></p>
+                <h3>Product Launches</h3>
+                <img src="../Bai1/launch.png" alt="Loading">
+                <p>Launch your product with case in a space that truly fits its image.<a href="Read more...">Read more...</a></p>
+            </div>
+        </div> 
+    </div>
+
+    <div class="footer"></div>
+</body>
+</html>
