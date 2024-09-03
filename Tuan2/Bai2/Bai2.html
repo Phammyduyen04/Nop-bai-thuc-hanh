@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        #container > #header{
+            background-image: url('../Bai2/background.png');
+            margin-bottom: 30px;
+        }
+
+        #container img{
+            float: left;
+        }
+
+        #header > .para{
+            float: left;
+            margin-top: 30px;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .para > #para1{
+            margin-bottom: 0;
+            padding-bottom: 0;
+            font-size: 32px;
+        }
+
+        .para > #para2{
+            margin-top: 0;
+            padding-top: 0;
+            font-size: 16px;
+        }
+
+        #header > #nav{
+            clear: both;
+            background-color: gray;
+            display: flex;
+            justify-content: left; 
+
+        }
+
+        #nav ul li{
+            list-style-type: none;
+            display: inline;
+            padding-right: 40px;
+            color: white;            
+        }
+
+        #container2{
+            display: flex;   
+        }
+
+        #section{
+            margin-left: 30px;
+        }
+
+        .article{
+            float:inline-start;
+        }
+
+        .article img{
+            float: left;
+            width:300px;            
+        }
+
+        .article > .p{
+            float: left;
+            margin-left: 40px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .p > #p1{
+            font-size: 28px;
+            margin:0;
+        }
+
+        .p > #p2{
+            font-size: 24px;
+            color:indianred;
+            margin:0;
+        }
+
+        .p > #p3{
+            font-size: 18px;
+        }
+
+        .article:last-child{
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        #aside{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 22px;
+            border-left: 1px solid rgb(243, 243, 255);
+            padding-left: 30px;
+            padding-top: 0;
+            margin-top: 0;
+            color:indianred;
+            margin-bottom: 30px;
+            margin-right: 100px;
+        }
+
+        #aside > .section1 li{
+            font-size: 18px;
+            list-style-type: none;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgb(243, 243, 255);
+        }
+
+        #aside > .section2{
+            font-size: 18px;
+            margin-top: 20px;
+            color:black;
+        }
+
+        #footer{
+            clear:both;
+            background-color: gray;
+            padding-top: 10px;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <img src="../Bai2/logo.png" alt="Loading...">
+            <div class="para">
+            <p id="para1">YOKO'S KITCHEN </p> 
+            <p id="para2">JAPANESE COOKING CLASSES</p>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li>home</li>
+                    <li>classes</li>
+                    <li>catering</li>
+                    <li>about</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+        </header>
+
+    <div id="container2">
+        <section id="section">
+            <article class="article">
+                <img src="../Bai2/Bokchoi.jpg" alt="Loading...">
+
+                <div class="p">
+                <p id="p1">Japanese Vegetarian</p> 
+                <p id="p2">Five week course in London</p>
+                <p id="p3">A five week introduction to traditional<br> 
+                            Japanese vegetarian meals, teaching you a <br> 
+                            selection of rice and noodle dishes.</p>
+                </div>
+
+            </article>
+
+            <article class="article">
+                <img src="../Bai2/teriyaki.jpg" alt="Loading...">
+
+                <div class="p">
+                <p id="p1">Sauces Masterclass</p>
+                <p id="p2">One day workshop</p>
+                <p id="p3">An intensive one-day course looking at how <br>
+                         to create the most delicious sauces for use <br>
+                         in a range of Japanese cookery.</p>
+                </div>
+            </article>
+        </section>
+
+        <aside id="aside"> Popular Recipies
+            <section class="section1">
+                <ul>
+                    <li>Yakitori (grilled chicken)</li>
+                    <li>Tsukune (minced chicken patties)</li>
+                    <li>Okonomiyaki (savory pancakes)</li>
+                    <li>Mizutaki (chicken stew)</li>
+                </ul>
+            </section>
+
+            Contact
+            <section class="section2">
+                Yoko's Kitchen<br>
+                27 Redchurch Street<br>
+                Shoreditch<br>
+                London E2 7DP
+            </section>
+        </aside>
+    </div>
+
+    <footer id="footer">
+        © 2011 Yoko's Kitchen
+    </footer>
+    </div>
+</body>
+</html>
